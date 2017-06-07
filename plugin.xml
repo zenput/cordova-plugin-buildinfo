@@ -18,6 +18,13 @@
 		<engine name="cordova" version=">=4.0.0" />
 	</engines>
 
+	<platform name="windows">
+		<js-module src="src/windows/BuildInfoProxy.js" name="BuildInfoProxy">
+ 			<merges target=""/>
+ 		</js-module>
+ 		<framework src="src/windows/lib/Debug/Debug.vcxproj" custom="true" type="projectReference" versions="10.*" />
+ 	</platform>
+
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="BuildInfo">
