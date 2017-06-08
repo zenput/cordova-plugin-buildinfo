@@ -6,13 +6,13 @@ BuildInfoProxy = {
             name: package.displayName,
             displayName: package.displayName,
             debug: Debug.DebugPlugin.isDebug(),
-            version: '%s.%s.%s.%s'.fmt(version.major, version.minor, version.build, version.revision),
+            version: version.major + "." + version.minor + "." + version.build + "." + version.revision,
             packageName: package.id.name,
-            buildType: Debug.DebugPlugin.isDebug() ? "debug" : "release",
+            buildType: Debug.DebugPlugin.isDebug() ? "debug" : "release"
 	    };
 
-		successCallback(buildInfo);
-	}
+        successCallback(buildInfo);
+    }
 }
 
 cordova.commandProxy.add('BuildInfo', BuildInfoProxy);
