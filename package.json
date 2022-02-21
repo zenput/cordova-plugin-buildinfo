@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-buildinfo",
+  "name": "@zenput/cordova-plugin-buildinfo",
   "version": "2.0.1-zp1",
   "description": "Cordova/Phonegap Build Information Plugin. Get PackageName, Version, Debug and more...",
   "cordova": {
-    "id": "cordova-plugin-buildinfo",
+    "id": "@zenput/cordova-plugin-buildinfo",
     "platforms": [
       "android",
       "ios",
